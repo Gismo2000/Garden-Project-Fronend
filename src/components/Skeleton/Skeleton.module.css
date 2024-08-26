@@ -1,0 +1,37 @@
+/* dark theme styles */
+
+.lightTheme .skeleton-container {
+  background-color: #ffffff;
+}
+
+.lightTheme .skeleton-square {
+  background-color: #f2f6d3;
+}
+
+.darkTheme .skeleton-container {
+  background-color: #424436;
+}
+
+.darkTheme .skeleton-square {
+  background-color: #383a2c;
+}
+
+/* */
+
+.skeleton-container {
+  width: 100%;
+  padding-top: 40px;
+}
+
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
+}
+
+.skeleton-square {
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,142 @@
+.banner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+
+  .headerImg {
+    width: 100%;
+    min-width: 1440px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .headerContent {
+    padding: 80px 40px 0 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+
+    h1 {
+      font-size: 96px;
+      line-height: 100.6px;
+
+      span {
+        display: inline-block;
+      }
+    }
+
+    button {
+      background-color: #92a134;
+      padding: 16px 56px;
+      border: none;
+      border-radius: 6px;
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    .headerImg {
+      height: auto;
+    }
+  }
+  @media (max-width: 1000px) {
+    height: 600px;
+
+    .headerImg {
+      height: auto;
+    }
+
+    .headerContent {
+      padding: 60px 0px 0 20px;
+
+      h1 {
+        line-height: 99px;
+        font-size: 90px;
+
+        span {
+          display: inline;
+          font-size: 81.5px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .headerImg {
+      height: auto;
+    }
+
+    .headerContent {
+      padding: 60px 0px 0 20px;
+
+      h1 {
+        line-height: 74.8px;
+        font-size: 68px;
+
+        span {
+          display: inline-block;
+          font-size: 68px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    height: 600px;
+
+    .headerImg {
+      height: auto;
+    }
+
+    .headerContent {
+      padding: 50px 0px 0 20px;
+      gap: 24px;
+
+      h1 {
+        line-height: 66px;
+        font-size: 60px;
+
+        span {
+          font-size: 60px;
+        }
+      }
+
+      button {
+        padding: 12px 52px;
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    height: 600px;
+
+    .headerImg {
+      height: auto;
+    }
+
+    .headerContent {
+      padding: 50px 0px 0 20px;
+      gap: 24px;
+
+      h1 {
+        line-height: 57.2px;
+        font-size: 52px;
+
+        span {
+          font-size: 52px;
+        }
+      }
+    }
+  }
+}

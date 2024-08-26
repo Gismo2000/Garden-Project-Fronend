@@ -1,0 +1,209 @@
+/* dark theme styles */
+
+.lightTheme {
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+}
+
+.lightTheme .card {
+  border-bottom: 1px solid #dddddd;
+}
+
+.lightTheme h4,
+.lightTheme .priceContainer > p {
+  color: #424436;
+}
+
+.darkTheme {
+  border: 1px solid #8b8b8b;
+  background-color: #383a2c;
+}
+
+.darkTheme .card {
+  border-bottom: 1px solid #8b8b8b;
+}
+
+.darkTheme h4,
+.darkTheme .priceContainer > p {
+  color: #ffffff;
+}
+
+/* */
+
+.cardContent {
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+
+  .card {
+    position: relative;
+    .cardImg {
+      display: block;
+      width: 100%;
+      height: 284px;
+      object-fit: cover;
+    }
+
+    .discountLabel {
+      position: absolute;
+      height: 34px;
+      top: 16px;
+      left: 16px;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 4px 8px 4px 8px;
+      background-color: #f26d22;
+      color: #ffffff;
+    }
+    .cardIcons {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+      cursor: pointer;
+
+      .heart {
+        width: 44px;
+        height: 38px;
+        &:hover {
+          content: url("../../media/icons/hoverHeart.svg");
+        }
+        &.hover:hover {
+          content: url("../../media/icons/favoritesHeart.svg");
+        }
+      }
+      .shoppingBag {
+        width: 44px;
+        height: 48px;
+        &:hover {
+          content: url("../../media/icons/hoverBag.svg");
+        }
+      }
+    }
+  }
+
+  h4 {
+    padding: 20px 32px 16px 32px;
+    font-size: 20px;
+    font-weight: 500;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .priceContainer {
+    display: flex;
+    gap: 16px;
+    padding: 0 32px 32px 32px;
+
+    .discountPrice {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 70%;
+    }
+
+    .noDiscountPrice {
+      font-size: 20px;
+      font-weight: 500;
+      color: #8b8b8b;
+      text-decoration: line-through;
+      line-height: 200%;
+    }
+    .originalPrice {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 70%;
+    }
+  }
+  @media (max-width: 1000px) {
+    .cardImg {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    h4 {
+      padding: 20px 20px 12px 20px;
+    }
+    .priceContainer {
+      gap: 12px;
+      padding: 0px 20px 20px 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .cardImg {
+      img {
+        width: 100%;
+        height: 250px;
+      }
+    }
+    h4 {
+      font-size: 20px;
+      padding: 20px 20px 12px 20px;
+    }
+  }
+  @media (max-width: 480px) {
+    .cardImg {
+      img {
+        width: 100%;
+        height: 220px;
+      }
+    }
+    h4 {
+      font-size: 20px;
+    }
+    .priceContainer {
+      :first-child {
+        font-size: 36px;
+      }
+
+      :last-child {
+        font-size: 18px;
+      }
+    }
+    .card {
+      .discountLabel {
+        width: 58px;
+        height: 31px;
+        font-size: 18px;
+        line-height: 23px;
+      }
+      .cardIcons {
+        .heart {
+          width: 37px;
+          height: 32px;
+        }
+        .shoppingBag {
+          width: 37px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  @media (max-width: 360px) {
+    h4 {
+      font-size: 18px;
+    }
+    .priceContainer {
+      :first-child {
+        font-size: 36px;
+      }
+
+      :last-child {
+        font-size: 18px;
+      }
+    }
+  }
+}

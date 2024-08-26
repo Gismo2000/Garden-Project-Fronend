@@ -1,0 +1,126 @@
+/* dark theme styles */
+
+.lightTheme .line {
+  background-color: #dddddd;
+}
+
+.lightTheme button {
+  color: #8b8b8b;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #dddddd;
+}
+
+.lightTheme .buttonActive,
+.lightTheme h1 {
+  color: #424436;
+}
+
+.darkTheme .line {
+  background-color: #8b8b8b;
+}
+
+.darkTheme button {
+  color: #8b8b8b;
+  background-color: #424436;
+  border: 1px solid #8b8b8b;
+}
+
+.darkTheme .buttonActive,
+.darkTheme h1 {
+  color: #ffffff;
+}
+
+/* */
+
+.saleProductsContainer {
+  padding: 40px 40px 0 40px;
+
+  .navigationLink {
+    display: flex;
+    align-items: center;
+
+    .line {
+      width: 16px;
+      height: 1px;
+    }
+    button {
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:hover{
+        background-color: #424436;
+        color: white;
+       
+      }
+    }
+  }
+  .titlePage {
+    
+    padding: 40px 0;
+    font-weight: 700;
+    font-size: 64px;
+  }
+  .cardContainer {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+  @media (max-width: 1000px) {
+    padding: 40px 20px 0 20px;
+    .cardContainer {
+      gap: 20px;
+      padding-top: 32px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .cardContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 768px) {
+    .titlePage {
+      font-size: 56px;
+      padding: 32px 0;
+    }
+
+    .cardContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 20px;
+    .navigationLink {
+      display: none;
+    }
+    .titlePage {
+      font-size: 48px;
+      padding: 32px 0 24px 0;
+    }
+
+    .cardContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 360px) {
+    padding: 0 20px;
+    .navigationLink {
+      display: none;
+    }
+    .titlePage {
+      font-size: 40px;
+      padding: 32px 0 24px 0;
+      line-height: 44px;
+    }
+
+    .cardContainer {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

@@ -1,0 +1,315 @@
+/* dark theme styles */
+
+.lightTheme {
+  border-bottom: 1px solid #dddddd;
+  background-color: #fffff1;
+}
+
+.lightTheme .navMenuLinks a {
+  color: #424436;
+}
+
+.lightTheme .active {
+  background-color: #fffff1;
+}
+
+.darkTheme {
+  background-color: #424436;
+  border-bottom: 1px solid #8b8b8b;
+}
+
+.darkTheme .navMenuLinks a {
+  color: #fffff1;
+}
+
+.darkTheme .active {
+  background-color: #424436;
+}
+
+/* */
+
+.navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 128px;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navMenu a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  cursor: pointer;
+  padding-top: 12px;
+}
+
+.navMenu span {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  top: 60px;
+  right: 65px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 10px;
+  position: absolute;
+  background-color: #92a134;
+  color: #fffff1;
+  width: 24px;
+  height: 24px;
+  border-radius: 15px;
+  padding: 6px;
+}
+
+.navMenu .favoriteCount {
+  top: 60px;
+  left: 35px;
+}
+
+.themeToggle {
+  display: flex;
+}
+
+.iconsLeft {
+  display: flex;
+  gap: 20px;
+  padding: 30px 0 30px 40px;
+}
+
+.plantLogo {
+  width: 70px;
+  height: 70px;
+}
+
+.navBarCenter {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.navMenuLinks {
+  display: flex;
+  gap: 32px;
+  padding-bottom: 28px;
+}
+
+.navMenuLinks a:hover {
+  color: #92a134;
+}
+
+.buttonNavMenu > button {
+  background-color: #92a134;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.active button {
+  width: 211px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconsRight {
+  display: flex;
+  gap: 24px;
+  padding: 40px;
+  position: relative;
+}
+
+.heartIcon {
+  width: 44px;
+  height: 38px;
+  margin-top: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cartIcon {
+  width: 44px;
+  height: 48px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.burgerMenuIcon {
+  display: none;
+}
+
+.crossIcon {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .iconsLeft {
+    gap: 14px;
+    padding: 30px 15px;
+  }
+
+  .plantLogo {
+    width: 65px;
+    height: 65px;
+  }
+
+  .navMenuLinks {
+    gap: 15px;
+    font-size: 14px;
+    padding-bottom: 30px;
+  }
+
+  .iconsRight {
+    gap: 12px;
+    padding: 40px 15px 40px 15px;
+  }
+
+  .navMenu .cartCount {
+    top: 60px;
+    right: 40px;
+  }
+
+  .navMenu .favoriteCount {
+    top: 60px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navMenu {
+    height: 68px;
+  }
+
+  .iconsLeft {
+    gap: 14px;
+    padding: 12px 15px;
+  }
+
+  .plantLogo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .navBarCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    right: -200%;
+    top: 0;
+    width: 282px;
+    padding: 100px 90px 1067px 32px;
+    transition: background 0.3s ease;
+  }
+
+  .buttonNavMenu {
+    display: flex;
+  }
+
+  .buttonNavMenu > button {
+    margin-top: 0;
+    font-size: 24px;
+    gap: 16px;
+    margin-left: 55px;
+  }
+
+  .navMenuLinks {
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 211px;
+  }
+
+  .navMenuLinks a {
+    font-size: 24px;
+  }
+
+  .active {
+    right: 0;
+  }
+
+  .burgerMenuIcon {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    width: 32px;
+    margin-top: 8px;
+    z-index: 201;
+  }
+
+  .iconsRight {
+    gap: 12px;
+    margin-bottom: 10px;
+    padding: 16px 20px;
+  }
+
+  .heartIcon {
+    width: 29px;
+    height: 25px;
+    margin-top: 6px;
+  }
+
+  .cartIcon {
+    width: 29px;
+    height: 32px;
+  }
+
+  .crossIcon {
+    display: block;
+    height: 44px;
+    padding-top: 8px;
+  }
+
+  .modalNavMenu.active {
+    background-color: #0000001a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 200;
+  }
+
+  .navMenu .cartCount,
+  .navMenu .favoriteCount {
+    top: 30px;
+    right: 80px;
+    font-size: 8px;
+    line-height: 7px;
+    padding: 5px;
+    width: 17px;
+    height: 17px;
+  }
+
+  .navMenu .favoriteCount {
+    left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navBarCenter {
+    width: 222px;
+  }
+
+  .navMenuLinks a {
+    font-size: 18px;
+  }
+
+  .buttonNavMenu > button {
+    font-size: 18px;
+    width: 166px;
+  }
+}

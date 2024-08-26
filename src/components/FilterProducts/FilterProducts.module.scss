@@ -1,0 +1,141 @@
+/* dark theme styles */
+
+.lightTheme .priceInputs ,
+.lightTheme .sortContainer,
+.lightTheme .salesProducts > label {
+  color: #424436;
+}
+
+.lightTheme .select  {
+  color: #8B8B8B;
+}
+
+.darkTheme .priceInputs,
+.darkTheme .sortContainer,
+.salesProducts > label {
+  color: #fffff1;
+}
+
+.darkTheme .sortContainer > select {
+  color: #8B8B8B;
+}
+
+/* */
+
+.filterContainer {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .priceInputs {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    label {
+      font-weight: 600;
+      font-size: 20px;
+    }
+    input {
+      border-radius: 6px;
+      border: 1px solid #dddddd;
+      max-width: 112px;
+      padding: 8px 16px;
+      &:focus {
+        outline: none;
+      }
+    }
+    ::placeholder {
+      font-size: 16px;
+      font-weight: 500;
+      color: #8B8B8B;
+    }
+    .filterButton {
+      display: none;
+    }
+  }
+
+  .salesProducts {
+    label {
+      display: flex;
+      gap: 16px;
+      font-size: 20px;
+      font-weight: 600;
+      align-items: center;
+    }
+
+    input[type="checkbox"] {
+      min-width: 36px;
+      height: 36px;
+      border: 1px solid #dddddd;
+      border-radius: 6px;
+      appearance: none;
+      -webkit-appearance: none;
+      background-color: #ffffff;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"]:checked {
+      background-color: #92a134;
+      border-color: white;
+      background-image: url("../../media/icons/checked.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 24px;
+    }
+  }
+  .sortContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    label {
+      font-weight: 600;
+      font-size: 20px;
+    }
+    .select {
+      width: 200px;
+      display: block;
+      padding: 8px 8px 8px 16px;
+      border: 1px solid #dddddd;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 16px;
+      background-repeat: no-repeat;
+      background-position: right 8px center;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    gap: 32px;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    .priceInputs {
+      gap: 12px;
+      label {
+        font-size: 16px;
+      }
+      input {
+        font-size: 14px;
+      }
+    }
+    .salesProducts {
+      label {
+        font-size: 18px;
+      }
+    }
+    .sortContainer {
+      label {
+        font-size: 18px;
+      }
+    }
+  }
+}

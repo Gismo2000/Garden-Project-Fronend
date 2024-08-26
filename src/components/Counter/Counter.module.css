@@ -1,0 +1,55 @@
+/* dark theme styles */
+
+.lightTheme .quantityButton {
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  color: #8b8b8b;
+}
+
+.lightTheme .quantity {
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  color: #424436;
+}
+
+.darkTheme .quantityButton {
+  border: 1px solid #8b8b8b;
+  background-color: #424436;
+  color: #8b8b8b;
+}
+
+.darkTheme .quantity {
+  border: 1px solid #8b8b8b;
+  background-color: #424436;
+  color: #ffffff;
+}
+
+/* */
+
+.productCounterContainer {
+  display: flex;
+  align-items: center;
+}
+
+.quantityButton {
+  font-size: 24px;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.quantity {
+  font-size: 24px;
+  width: 96px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 6px;
+}

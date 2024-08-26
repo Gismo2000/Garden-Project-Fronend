@@ -1,0 +1,156 @@
+/* dark theme styles */ 
+
+.lightTheme .line {
+  background-color: #dddddd;
+}
+
+.lightTheme .btn_category_card,
+.lightTheme .btn2_category_card  {
+  border: 1px solid #dddddd;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #8b8b8b;
+}
+
+.lightTheme .categoriesTitle > span {
+   color: #424436;
+}
+
+.darkTheme .categoriesTitle > span {
+  color: #fffff1;
+}
+
+ .darkTheme .categoriesTitle .line {
+  background-color: #8B8B8B;
+}
+
+.darkTheme .categoriesTitle button,
+.darkTheme .btn2_category_card {
+  border: 1px solid #8B8B8B;
+  background-color: #424436;
+  color: #8B8B8B;
+  &:hover{
+    color: white;
+  }
+}  
+
+.darkTheme .btn_category_card:hover {
+  color: #FFFFFF;
+}
+
+/*  */ 
+
+
+.categories_container{
+  margin: 0 40px;
+}
+
+.containerImg {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+
+.btn2_category_card {
+  display: none;
+}
+
+
+.categoriesTitle {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.categoriesTitle > span {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 110%;
+  margin-right: 32px;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+}
+
+.btn_category_card {
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid #dddddd;
+  &:hover{
+    background-color: #424436;
+    color: white;
+  }
+}
+
+@media (max-width: 1000px) {
+  .categories_container{
+    margin: 0 20px;
+  }
+  .containerImg {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerImg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .categoriesTitle>span {
+    font-size: 56px;
+    margin-right: 20px;
+  }
+  .btn_category_card {
+   font-size: 14px;
+   padding: 8px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .categoriesTitle>span {
+    font-size: 48px;
+    margin-right: 20px;
+  }
+
+  .btn_category_card {
+    display: none;
+  }
+
+  .btn2_category_card {
+    display: block;
+    border-radius: 6px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: auto;
+    margin-top: 24px;
+    
+  }
+ .categories_container a {
+    text-decoration: none;
+  }
+
+  .line {
+    display: none;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .containerImg {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .categoriesTitle>span {
+    font-size: 44px;
+  }
+}

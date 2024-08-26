@@ -1,0 +1,103 @@
+/* dark theme styles */
+
+.lightTheme .addToCartButton {
+  color: #424436;
+  background-color: #fffff1;
+  border: 1px solid #dddddd;
+}
+
+.lightTheme .addToCartButton:hover {
+  background-color: #424436;
+  color: #ffffff;
+  border: none;
+}
+
+.darkTheme .addToCartButton {
+  background-color: #92a134;
+  color: #ffffff;
+  border: none;
+}
+
+.darkTheme .addContentStyles {
+  border: 1px solid #8b8b8b;
+}
+
+.darkTheme .addToCartButton:hover {
+  background-color: #424436;
+  color: #ffffff;
+  border: 1px solid #8b8b8b;
+}
+
+/*  */
+
+.cardContentStyles {
+  white-space: wrap;
+  min-width: 484px;
+  min-height: 422px;
+}
+
+.modalWindowContent > h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom: 16px;
+  margin-right: 90px;
+}
+
+.addToCartButton {
+  padding: 16px 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 16px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+@media (max-width: 780px) {
+  .modalWindowContent > h3 {
+    font-size: 36px;
+    line-height: 39px;
+    margin-right: 76px;
+  }
+
+  .addToCartButton {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .cardContentStyles {
+    min-width: 400px;
+    min-height: 395px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalWindowContent > h3 {
+    font-size: 28px;
+    line-height: 30px;
+    margin-right: 76px;
+    margin-bottom: 12px;
+  }
+
+  .cardContentStyles {
+    min-width: 270px;
+    min-height: 321px;
+  }
+}
+
+@media (max-width: 360px) {
+  .modalWindowContent > h3 {
+    font-size: 24px;
+    line-height: 25px;
+    margin-right: 20px;
+    padding-top: 52px;
+  }
+
+  .cardContentStyles {
+    min-width: 170px;
+    min-height: 221px;
+  }
+}

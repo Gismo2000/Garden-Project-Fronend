@@ -1,0 +1,184 @@
+/* dark theme styles */
+
+.lightTheme {
+  color: #424436;
+}
+
+.lightTheme .messageContainer p {
+  color: #8b8b8b;
+}
+
+.darkTheme {
+  color: #ffffff;
+}
+
+.darkTheme .messageContainer p{
+  color: #DDDDDD;
+}
+
+/* */
+
+.notFoundPage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  align-items: center;
+}
+
+
+.containerImg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+}
+
+.containerImg img {
+  max-width: 100%;
+  height: auto;
+}
+
+.messageContainer {
+  margin-top: 32px;
+  text-align: center;
+
+
+}
+
+.messageContainer h4 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 70.4px;
+  align-items: center;
+  color: #424436;
+}
+
+.messageContainer p {
+  margin-top: 16px;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #8B8B8B;
+}
+
+.messageContainer button {
+  margin-top: 32px;
+  padding: 16px 56px;
+  border: none;
+  border-radius: 6px;
+  background: #92a134;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  cursor: pointer;
+  transition: 50ms;
+}
+
+.messageContainer button:hover {
+  background: #282828;
+}
+
+@media (max-width: 1440px) {
+  .four {
+    width: calc(179px * 0.8)
+  }
+
+  .zero {
+    width: calc(300px * 0.8)
+  }
+}
+
+@media (max-width: 1000px) {
+  .four {
+    width: calc(179px * 0.6)
+  }
+
+  .zero {
+    width: calc(300px * 0.6)
+  }
+
+  .messageContainer button {
+    height: 58px;
+    padding: 16px 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .four {
+    width: calc(179px * 0.5)
+  }
+
+  .zero {
+    width: calc(300px * 0.5)
+  }
+
+  .messageContainer h4 {
+    line-height: 61.6px;
+    font-size: 56px;
+  }
+
+  .messageContainer button {
+    height: 58px;
+    padding: 16px 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .four {
+    width: calc(179px * 0.4)
+  }
+
+  .zero {
+    width: calc(300px * 0.4)
+  }
+
+  .messageContainer h4 {
+    font-size: 48px;
+    line-height: 52.8px;
+  }
+
+  .messageContainer p {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+
+  .messageContainer button {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+}
+
+@media (max-width: 360px) {
+  .four {
+    width: calc(179px * 0.35)
+  }
+
+  .zero {
+    width: calc(300px * 0.35)
+  }
+
+  .messageContainer h4 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .messageContainer p {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+
+  .messageContainer button {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+}
